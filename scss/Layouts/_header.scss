@@ -1,0 +1,29 @@
+.myNavBar{
+        position: absolute;
+        z-index: 10;
+        .navbar-nav{
+            .nav-item{
+                 margin: 0 $mg-1;
+                .nav-link{
+                    @include text($color--black, $fs-0, $fw-2);
+                    transition: 0.5s;
+                    &:hover{
+                        color: $color--violet;
+                    }
+                }
+            }
+        }
+        .btn--tabula{
+            margin-right: $mg-1;
+            border-radius: 30px;
+            @include button($color--white, $color--violet, $fw-2,$color--white,$color--violet);
+        }
+        .icon{
+            .fab{
+                margin-right: $mg-1 - 5;
+                &:hover{
+                    color: $color--violet;
+                }
+            } 
+        }
+}

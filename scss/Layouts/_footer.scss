@@ -1,0 +1,73 @@
+.myFooter {
+    background-image: url(../../img/footer_background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-bottom: $pd-6;
+    .list_footer {
+        width: 95%;
+        margin: auto;
+        padding-bottom: 100px;
+        ul {
+            li {
+                list-style: none;
+                color: $color--white;
+                padding: 0.3em 0;
+                a {
+                    text-decoration: none;
+                    color: $color--white;
+                }
+
+                i {
+                    margin-right: $mg-1;
+                    &:hover{
+                        color: $color--black;
+                    }
+                }
+            }
+        }
+
+        .footer_nav {
+            margin-right: $mg-5;
+            margin-top: $mg-4;
+
+            h3 {
+                @include text($color--white, $fs-3, $fw-bold);
+                margin-bottom: $mg-1;
+            }
+        }
+
+        .footer_2 {
+            ul {
+                li {
+                    border-bottom: 1px solid rgba(0, 0, 0, .1);
+                    line-height: 1;
+                    padding: 0.8em 0;
+                    a{
+                        &:hover{
+                            color: $color--cyan-bluish-gray;
+                        }
+                    }
+                }
+            }
+        }
+        .footer_4{
+            .input_footer{
+                input{
+                    border: 1px solid $color--bg;
+                    background-color: $color--violet;
+                    border-radius: 50px;}
+                    &:focus{
+                        box-shadow: none;
+                        border: 1px solid $color--white;
+                    }
+                }
+            }
+            .button_footer{
+                border-radius: 50px;
+                margin-top: $mg-1;
+                text-align: center;
+                @include button( $color--violet, $color--white, $fw-2, $color--violet, $color--white);
+            }
+        }
+    }

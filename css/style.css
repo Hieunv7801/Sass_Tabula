@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+.myNavBar {
+  position: absolute;
+  z-index: 10;
+}
+
+.myNavBar .navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.myNavBar .navbar-nav .nav-item .nav-link {
+  color: #000000;
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+
+.myNavBar .navbar-nav .nav-item .nav-link:hover {
+  color: #b61984;
+}
+
+.myNavBar .btn--tabula {
+  margin-right: 10px;
+  border-radius: 30px;
+  color: #ffffff;
+  background-color: #b61984;
+  font-weight: 400;
+  border: 1px solid #b61984;
+}
+
+.myNavBar .btn--tabula:hover {
+  background-color: #ffffff;
+  color: #b61984;
+}
+
+.myNavBar .icon .fab {
+  margin-right: 5px;
+}
+
+.myNavBar .icon .fab:hover {
+  color: #b61984;
+}
+
+.myAbout {
+  position: relative;
+  z-index: 1;
+}
+
+.myAbout .img_top {
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.myAbout .img_bottm {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 30px;
+}
+
+.myAbout .about_tabula {
+  width: 92%;
+  margin: auto;
+}
+
+.myAbout .about_tabula .about_content {
+  margin-top: 50%;
+}
+
+.myAbout .about_tabula .about_content h1 {
+  color: #b61984;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.myAbout .about_tabula .about_content p {
+  color: #191919;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 90px;
+  margin-bottom: 200px;
+}
+
+.myAbout .about_tabula img {
+  margin-top: 20%;
+}
+
+.myMember {
+  background-color: #dcd1f3;
+  position: relative;
+}
+
+.myMember .member {
+  z-index: 3;
+  position: relative;
+  width: 92%;
+  margin: auto;
+}
+
+.myMember .member .card {
+  margin-bottom: 32px;
+  border: none;
+}
+
+.myMember .member .card .card-body {
+  text-align: center;
+}
+
+.myMember .member .card .card-body:hover {
+  box-shadow: 0 0 50px #ccc;
+}
+
+.myMember .member .card .card-body p:first-child {
+  color: #b61984;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.myMember .member .card .card-body h4 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.myMember .member_bottom {
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.myFind {
+  margin-top: 4.5rem;
+  position: relative;
+}
+
+.myFind .find_your {
+  width: 80%;
+  margin: auto;
+  z-index: 3;
+  position: relative;
+}
+
+.myFind .find_your .content_find {
+  height: 500px;
+  padding-top: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 50px #ccc;
+}
+
+.myFind .find_form h1 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.myFind .find_form form .input-group-text {
+  background-color: white;
+}
+
+.myFind .find_form form .input-group-text i {
+  color: #b61984;
+}
+
+.myFind .find_form form .input .sol {
+  margin-right: 15px;
+}
+
+.myFind .find_form form .form-control {
+  border-left: none;
+}
+
+.myFind .find_form form .form-control:focus {
+  box-shadow: none;
+}
+
+.myFind .find_form form .custom-select:focus {
+  box-shadow: none;
+}
+
+.myFind .find_form form i {
+  color: #b61984;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.myFind .find_form form .input-group-text {
+  border-right: none;
+}
+
+.myFind .find_form form .btn--send {
+  margin-top: 50px;
+  border-radius: 30px;
+  padding: 13px 40px;
+  color: #ffffff;
+  background-color: #b61984;
+  font-weight: 400;
+  border: 1px solid #b61984;
+}
+
+.myFind .find_form form .btn--send:hover {
+  background-color: #ffffff;
+  color: #b61984;
+}
+
+.myFind .find_bottom {
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.myFooter {
+  background-image: url(../../img/footer_background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 70px;
+}
+
+.myFooter .list_footer {
+  width: 95%;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+.myFooter .list_footer ul li {
+  list-style: none;
+  color: #ffffff;
+  padding: 0.3em 0;
+}
+
+.myFooter .list_footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.myFooter .list_footer ul li i {
+  margin-right: 10px;
+}
+
+.myFooter .list_footer ul li i:hover {
+  color: #000000;
+}
+
+.myFooter .list_footer .footer_nav {
+  margin-right: 50px;
+  margin-top: 40px;
+}
+
+.myFooter .list_footer .footer_nav h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.myFooter .list_footer .footer_2 ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  line-height: 1;
+  padding: 0.8em 0;
+}
+
+.myFooter .list_footer .footer_2 ul li a:hover {
+  color: #abb8c3;
+}
+
+.myFooter .list_footer .footer_4 .input_footer input {
+  border: 1px solid #dcd1f3;
+  background-color: #b61984;
+  border-radius: 50px;
+}
+
+.myFooter .list_footer .footer_4 .input_footer:focus {
+  box-shadow: none;
+  border: 1px solid #ffffff;
+}
+
+.myFooter .list_footer .button_footer {
+  border-radius: 50px;
+  margin-top: 10px;
+  text-align: center;
+  color: #b61984;
+  background-color: #ffffff;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+}
+
+.myFooter .list_footer .button_footer:hover {
+  background-color: #b61984;
+  color: #b61984;
+}
+/*# sourceMappingURL=style.css.map */

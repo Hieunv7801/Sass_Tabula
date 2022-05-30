@@ -1,0 +1,38 @@
+.myAbout {
+    position: relative;
+    z-index: 1;
+    .img_top{
+        top: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .img_bottm{
+        bottom: 0;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 30px;
+    }
+    .about_tabula {
+        width: 92%;
+        margin: auto;
+        .about_content {
+            h1 {
+                @include text($color--violet, $fs-0, $fw-bold);
+            }
+            p {
+                @include text($color--black--gray, $fs-7, $fw-bold);
+                line-height: 90px;
+                margin-bottom: 200px;
+            }
+            margin-top: 50%;
+        }
+        img {
+            margin-top: 20%;
+        }
+    }
+
+}

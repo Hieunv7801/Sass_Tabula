@@ -1,0 +1,82 @@
+.myFind {
+    margin-top: 4.5rem;
+    position: relative;
+    .find_your {
+        width: 80%;
+        margin: auto;
+        z-index: 3;
+        position: relative;
+        .content_find {
+            height: 500px;
+            padding-top: $pd-2;
+            background-color: rgba(255, 255, 255, 1);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 50px #ccc;
+        }
+    }
+
+    .find_form {
+        h1 {
+            @include text($color--black, $fs-4, $fw-bold);
+            margin-bottom: $fs-5;
+        }
+
+        form {
+            .input-group-text {
+                background-color: white;
+
+                i {
+                    color: $color--violet;
+                }
+            }
+
+            .input {
+                .sol {
+                    margin-right: $fs-0;
+                }
+            }
+
+            .form-control {
+                border-left: none;
+
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            .custom-select {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+
+            i {
+                @include text($color--violet, $fs-0, $fw-normal);
+            }
+
+            .input-group-text {
+                border-right: none;
+            }
+
+            .btn--send {
+                margin-top: $fs-6;
+                border-radius: 30px;
+                padding: $fs-1 $fs-4;
+                @include button($color--white, $color--violet, $fw-2, $color--white, $color--violet);
+            }
+        }
+
+    }
+
+    .find_bottom {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+        left: 0;
+        pointer-events: none;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}

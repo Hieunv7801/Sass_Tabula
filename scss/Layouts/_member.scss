@@ -1,0 +1,35 @@
+.myMember {
+    background-color: $color--bg;
+    position: relative;
+    .member {
+        z-index: 3;
+        position: relative;
+        width: 92%;
+        margin: auto;
+       .card {
+            margin-bottom: $mg-3;
+            border: none;
+            .card-body {
+                text-align: center;
+                &:hover{
+                    box-shadow: 0 0 50px #ccc;
+                }
+                p:first-child {
+                    @include text($color--violet, $fs-0, $fw-normal);
+                }
+
+                h4 {
+                    @include text($color--black, $fs-2, $fw-bold);
+                }
+            }
+        }
+    }
+    .member_bottom{
+        bottom: 0;
+        position: absolute;
+        pointer-events: none;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+}
